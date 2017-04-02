@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+   <!-- Always define the charset first to prevent security risk. Look at this page for more info: https://code.google.com/archive/p/doctype-mirror/wikis/ArticleUtf7.wiki -->
+   <meta charset="UTF-8">
+	<title>ON.twitch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+   
+   <script src="js/index.js"></script>
+</head>
+<body>
+   <div class="container-fluid full-height">
+      <div class="row full-height">
+      
+         <div class="col-sm-4 left-col">
+            <div class="row left-content">
+               <div class="col-xs-12">
+                  <div class="text-center">
+                     <h1>ON.Twitch</h1>
+                  </div>
+                  <div class="filters">
+                     <div class="btn-group btn-group-justified" role="group">
+                        <div id="btn-all" class="btn btn-twitch active">All&nbsp;<span id="all-bdg" class="badge"></span></div>
+                        <div id="btn-on" class="btn btn-twitch">On&nbsp;<span id="on-bdg" class="badge"></span></div>
+                        <div id="btn-off" class="btn btn-twitch">Off&nbsp;<span id="off-bdg" class="badge"></span></div>
+                     </div>
+                  </div>
+                  <div class="stream-list">
+                     <ul id="online" class="list-unstyled">
+                     </ul>
+                     <ul id="offline" class="list-unstyled">
+                     </ul>
+                     <ul id="dead" class="list-unstyled">
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            
+               <footer>
+                  <a href="#about" data-toggle="modal">About&amp;Credits</a>
+               </footer>
+         </div>
+         
+         <div class="col-sm-8 hidden-xs showcase">
+            <div class="showcase-txt">
+               <h2 id="chn-titl"></h2>
+               <div class="row">
+                  <div class="col-sm-4">
+                     <p><b>Last updated:&nbsp;</b><span id="info"></span></p>
+                  </div>
+                  <div class="col-sm-4 col-sm-offset-4">
+                     <p><b>Status:&nbsp;</b><span id="status"></span></p>
+                  </div>
+               </div>
+               <div>
+                  <p id="description"></p>
+               </div>
+               <div>
+                  <a id="to-chn" href="" target="_blank" class="btn btn-twitch" role="button">Go to channel</a>
+               </div>
+            </div>
+         </div> 
+      </div>
+      
+   </div>
+   
+   <!-- Modal #about -->
+	<div id="about" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+		<!-- .modal-content: define the general style for the modal-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="text-center">About &amp; Credits</h3>
+				</div>
+				<div class="modal-body">
+					<ul class="list-unstyled">
+                  <li>
+                     <p>Twitch animated background by <a class="text-nowrap" href="https://dribbble.com/shots/2268094-Twitch-Logo-Animation" target="_blank">Matt Gravish</a></p>
+                  </li>
+                  <li>
+                     <p>Project inspired by <a class="text-nowrap" href="http://freecodecamp.com" target="_blank">FreeCodeCamp</a></p>
+                  </li>
+                  <li>
+                     <p>Desinged and developed with &hearts; by <a class="text-nowrap" href="https://codepen.io/ALF3run/" target="_blank">ALF</a></p>
+                  </li>
+               </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+   
+</body>
+</html>

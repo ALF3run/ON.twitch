@@ -1,0 +1,104 @@
+@import 'https://fonts.googleapis.com/css?family=Bungee+Inline';
+
+html, body {
+	position: relative;
+	height: 100%;
+}
+a, a:visited {
+	color: #6441A4;
+}
+a:hover, a:focus {
+	color: #424242;
+	text-decoration: none;
+}
+footer {
+	background: #FFF;
+	text-align: center;
+	padding: 7px 0 7px 0;
+}
+h1, h3 {
+	font-family: 'Bungee Inline', cursive;
+	font-size: 2.5em;
+	text-shadow: 4px 0 0 #6441A4, -4px 0 0 #6441A4, 0 4px 0 #6441A4, 0 -4px 0 #6441A4, 2px 2px 0 #6441A4, -2px 2px 0 #6441A4, 2px -2px 0 #6441A4, -2px -2px 0 #6441A4;
+	color: #FFF;
+}
+
+.btn-twitch {
+	background: #6441A4;
+	color: #FFF;
+	border: solid 1px #5A379A;
+}
+.btn-twitch:hover, .btn-twitch:focus {
+	background: #7855B8;
+	color: #FFF;
+}
+.btn-twitch>.badge {
+	color: #6441A4;
+	background: #FFF;
+}
+.filters {
+	margin: 15px 0 25px 0;
+}
+.full-height {
+	height: 100% !important;
+}
+.label {
+	float: right;
+}
+.left-col {
+	border-top: solid 6px #6441A4;
+	box-shadow: 5px 0 10px #212121;
+	height: 100%;
+	z-index: 1;
+	overflow-y: auto;
+}
+.showcase {
+	background-color: #424242;
+	background-image:  url('https://d13yacurqjgara.cloudfront.net/users/802553/screenshots/2268094/twitch_logo_animation.gif');
+	background-position: center center;
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+}
+.showcase-txt {
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	position: relative;
+	top: 50%;
+	padding: 1em;
+	height: 100%;
+	visibility: hidden;
+}
+.stream-list {
+	overflow-y: auto;
+	height: 65vh;
+}
+.stream-list img {
+	border-radius: 50%;
+	width: 1em;
+	height: 1em;
+}
+.stream-list li {
+	color: #6441A4;
+	font-size: 1.1em;
+	border-radius: 2px;
+	padding: 0.3em 1em 0 1em;
+}
+.stream-list li:hover,
+.stream-list li:focus {
+	background: #6441A4 !important;
+	color: #FFF !important;
+	font-weight: bold !important;
+	cursor: pointer !important;
+}
+
+#to-chn {
+	color: #FFF;
+	font-size: 1.5em;
+	box-shadow: 0 6px 0 #5A379A;
+	margin: 1em;
+}
+#online, #offline, #dead {
+	position: relative;
+}
