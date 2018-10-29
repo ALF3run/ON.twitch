@@ -100,7 +100,7 @@ $(function() {
 					$('#info').text(data['updated_at'].replace(/[A-Z]/g, ' ').slice(0,-4));
 					break;
 				case 'offline':
-					$('.showcase').css('background-image', 'url("https://d13yacurqjgara.cloudfront.net/users/802553/screenshots/2268094/twitch_logo_animation.gif")');
+					$('.showcase').css('background-image', 'url("../img/twitch_logo_animation.gif")');
 					$('#chn-titl').text(data['display_name']);
 					$('#to-chn').removeClass('disabled');
 					$('#description').text(data['bio']);
