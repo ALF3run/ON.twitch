@@ -54,7 +54,7 @@ h1, h3 {
 }
 .showcase {
 	background-color: #424242;
-	background-image:  url('https://d13yacurqjgara.cloudfront.net/users/802553/screenshots/2268094/twitch_logo_animation.gif');
+	background-image:  url('../img/twitch_logo_animation.gif');
 	background-position: center center;
 	background-size: cover;
 	height: 100%;
